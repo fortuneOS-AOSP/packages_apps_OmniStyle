@@ -90,8 +90,28 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </intent-filter>
         </activity-alias>
         <activity
+            android:name=".avengers"
+            android:label="Avengers"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".beaches"
             android:label="Beaches"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".comic"
+            android:label="JLA, Xmen and Avengers"
             android:exported="false" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
