@@ -33,7 +33,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         android:requestLegacyExternalStorage="true" >
         <activity
             android:name=".BrowseHeaderActivity"
-            android:label="@string/browse_header" >
+            android:label="@string/browse_header"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -41,7 +42,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".PickHeaderActivity"
-            android:label="@string/pick_header">
+            android:label="@string/pick_header"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -49,7 +51,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".BrowseThemeHeaderActivity"
-            android:label="@string/browse_theme_header" >
+            android:label="@string/browse_theme_header"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -58,7 +61,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <activity
             android:name=".BrowseWallsActivity"
             android:label="@string/browse_walls"
-            android:configChanges="orientation|screenSize">
+            android:configChanges="orientation|screenSize"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -67,7 +71,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <activity
             android:name=".BrowseWallsFilterActivity"
             android:label="@string/browse_theme_walls"
-            android:configChanges="orientation|screenSize">
+            android:configChanges="orientation|screenSize"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -76,6 +81,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <activity-alias
             android:name=".WallpaperActivity"
             android:label="@string/omni_walls"
+            android:exported="true"
             android:targetActivity="org.omnirom.omnistyle.BrowseWallsActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -84,7 +90,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity-alias>
         <activity
             android:name=".beaches"
-            android:label="Beaches" >
+            android:label="Beaches"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
 
@@ -93,7 +100,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".scenes1"
-            android:label="Flat Scenery" >
+            android:label="Flat Scenery"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
 
@@ -102,7 +110,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".scenes2"
-            android:label="Flat Scenery 2" >
+            android:label="Flat Scenery 2"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -110,7 +119,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".forest"
-            android:label="Forest" >
+            android:label="Forest"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -118,7 +128,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".nature_random"
-            android:label="Nature (random)" >
+            android:label="Nature (random)"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -126,7 +137,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".nature"
-            android:label="Nature" >
+            android:label="Nature"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -134,7 +146,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".poly"
-            android:label="Poly" >
+            android:label="Poly"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -142,7 +155,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".space_interval"
-            android:label="Space (interval)" >
+            android:label="Space (interval)"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -150,7 +164,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".wavvy"
-            android:label="Wavvy" >
+            android:label="Wavvy"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -158,7 +173,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".western"
-            android:label="Western" >
+            android:label="Western"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -166,7 +182,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
         <activity
             android:name=".scenery"
-            android:label="Scenery - Anime" >
+            android:label="Scenery - Anime"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="org.omnirom.DaylightHeaderPack1" />
                 <category android:name="android.intent.category.DEFAULT" />
